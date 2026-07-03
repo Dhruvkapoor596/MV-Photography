@@ -1,0 +1,249 @@
+Option 1
+
+// components/Navbar.tsx
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <header className="w-full flex justify-between items-center py-7 px-8 md:px-16 lg:px-32 border-b border-[#EAE8E1]">
+      
+      {/* Brand Logo: Clean, Editorial, and Balanced */}
+      <Link href="/">
+        <h1 className="font-serif text-3xl md:text-4xl tracking-tight text-[#2C2C2C] flex items-baseline group">
+          Captured
+          <span className="font-sans font-light text-[10px] md:text-xs uppercase tracking-[0.3em] ml-4 text-[#71717A] group-hover:text-[#D35400] transition-colors">
+            By Mohit
+          </span>
+        </h1>
+      </Link>
+      
+      {/* Navigation Links */}
+      <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest text-[#71717A]">
+        <Link href="/about" className="hover:text-[#2C2C2C] transition-colors">About</Link>
+        <Link href="/portfolio" className="hover:text-[#2C2C2C] transition-colors">Portfolio</Link>
+        <Link href="/contact" className="hover:text-[#2C2C2C] transition-colors">Contact</Link>
+      </nav>
+
+      {/* Mobile Menu Button */}
+      <button className="md:hidden text-sm uppercase tracking-widest text-[#2C2C2C]">
+        Menu
+      </button>
+    </header>
+  );
+}
+
+Option 3
+
+// components/Navbar.tsx
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <header className="w-full flex justify-between items-center py-8 px-8 md:px-16 lg:px-32 border-b border-[#EAE8E1]">
+      
+      {/* Brand Logo: Technical & Modern */}
+      <Link href="/">
+        <h1 className="font-mono text-2xl md:text-3xl font-bold tracking-tighter text-[#2C2C2C] hover:text-[#D35400] transition-colors">
+          // CAPTURED.MOHIT
+        </h1>
+      </Link>
+      
+      {/* Navigation Links: Minimalist */}
+      <nav className="hidden md:flex gap-8 text-[10px] uppercase tracking-[0.2em] font-semibold text-[#2C2C2C]">
+        <Link href="/about" className="hover:opacity-50 transition-opacity">About</Link>
+        <Link href="/portfolio" className="hover:opacity-50 transition-opacity">Portfolio</Link>
+        <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
+      </nav>
+
+      <button className="md:hidden text-[10px] uppercase tracking-[0.2em] font-bold text-[#2C2C2C]">
+        Menu
+      </button>
+    </header>
+  );
+}
+
+Option 5
+
+// components/Navbar.tsx
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <header className="w-full flex justify-between items-center py-6 px-8 md:px-16 lg:px-32 border-b border-[#EAE8E1]">
+      
+      {/* Brand: Balanced and clean, uses your existing fonts */}
+      <Link href="/" className="group">
+        <h1 className="text-4xl md:text-5xl tracking-tight text-[#2C2C2C] flex items-center">
+          Captured
+          <span className="w-2 h-2 bg-[#D35400] rounded-full ml-2"></span>
+          <span className="ml-2 font-light">Mohit</span>
+        </h1>
+      </Link>
+      
+      {/* Nav links */}
+      <nav className="hidden md:flex gap-8 text-xs uppercase tracking-widest text-[#71717A]">
+        <Link href="/about" className="hover:text-[#2C2C2C] transition-colors">About</Link>
+        <Link href="/portfolio" className="hover:text-[#2C2C2C] transition-colors">Portfolio</Link>
+        <Link href="/contact" className="hover:text-[#2C2C2C] transition-colors">Contact</Link>
+      </nav>
+
+      <button className="md:hidden text-xs uppercase tracking-widest text-[#2C2C2C]">
+        Menu
+      </button>
+    </header>
+  );
+}
+
+Option 6.2
+
+// components/Navbar.tsx
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <header className="w-full flex justify-between items-center py-5 px-8 md:px-16 lg:px-32 border-b border-[#EAE8E1]">
+      
+      {/* Brand: "The Signature Studio Look" (Scaled Up) */}
+      <Link href="/" className="group">
+        <div className="flex flex-col">
+          {/* Main Name: Larger, Tight and Bold */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-[#2C2C2C] uppercase">
+            Captured
+          </h1>
+          {/* Subtitle: Proportioned to match the new size */}
+          <div className="flex items-center gap-3 mt-1">
+            {/* The line expands slightly on hover for a premium feel */}
+            <span className="w-8 h-2px bg-[#D35400] transition-all duration-500 group-hover:w-12"></span>
+            <span className="text-[11px] md:text-xs uppercase tracking-[0.3em] text-[#71717A] group-hover:text-[#D35400] transition-colors duration-300">
+              By Mohit
+            </span>
+          </div>
+        </div>
+      </Link>
+      
+      {/* Nav links: Minimalist */}
+      <nav className="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] font-medium text-[#71717A]">
+        <Link href="/about" className="hover:text-[#D35400] transition-colors">About</Link>
+        <Link href="/portfolio" className="hover:text-[#D35400] transition-colors">Portfolio</Link>
+        <Link href="/contact" className="hover:text-[#D35400] transition-colors">Contact</Link>
+      </nav>
+
+      {/* Mobile Trigger */}
+      <button className="md:hidden text-[11px] uppercase tracking-[0.2em] text-[#2C2C2C]">
+        Menu
+      </button>
+    </header>
+  );
+}
+
+Navbar.tsx 2.0
+
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
+export default function Navbar() {
+  // State to track if the mobile menu is open or closed
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Functions to handle toggling and closing the menu
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  return (
+    <header className="w-full flex justify-between items-center py-7 px-8 md:px-16 lg:px-32 border-b border-[#EAE8E1] relative z-50">
+      
+      {/* Brand Logo */}
+      <Link href="/" onClick={closeMenu} className="z-50">
+        <h1 className="font-serif text-3xl md:text-4xl font-medium tracking-wide text-[#2C2C2C] hover:opacity-70 transition-opacity">
+          Captured By Dhruv Kapoor
+        </h1>
+      </Link>
+      
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest text-[#71717A]">
+        <Link href="/about" className="hover:text-[#2C2C2C] transition-colors">About</Link>
+        <Link href="/portfolio" className="hover:text-[#2C2C2C] transition-colors">Portfolio</Link>
+        <Link href="/contact" className="hover:text-[#2C2C2C] transition-colors">Contact</Link>
+      </nav>
+
+      {/* Mobile Menu Toggle Button */}
+      <button 
+        onClick={toggleMenu}
+        className="md:hidden text-sm uppercase tracking-widest text-[#2C2C2C] z-50 focus:outline-none"
+      >
+        {isMenuOpen ? "Close" : "Menu"}
+      </button>
+
+      {/* Full-Screen Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 bg-[#FAFAFA] flex flex-col items-center justify-center transition-all duration-500 ease-in-out md:hidden ${
+          isMenuOpen 
+            ? "opacity-100 pointer-events-auto translate-y-0" 
+            : "opacity-0 pointer-events-none -translate-y-4"
+        }`}
+      >
+        <nav className="flex flex-col gap-10 text-3xl font-serif text-[#2C2C2C] text-center">
+          <Link href="/about" onClick={closeMenu} className="hover:text-[#D35400] transition-colors">
+            About
+          </Link>
+          <Link href="/portfolio" onClick={closeMenu} className="hover:text-[#D35400] transition-colors">
+            Portfolio
+          </Link>
+          <Link href="/contact" onClick={closeMenu} className="hover:text-[#D35400] transition-colors">
+            Contact
+          </Link>
+        </nav>
+      </div>
+      
+    </header>
+  );
+}
+
+Layout.tsx 
+
+// app/layout.tsx
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-[#F9F8F4] text-[#2C2C2C]`}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
+
+portfolioData.ts
+
+// data/portfolioData.ts
+export type Photo = {
+  id: string;
+  categorySlug: string;
+  url: string;
+  caption: string;
+  layoutClass: string;
+};
+
+export const categories = [
+  { slug: "travel-lifestyle", title: "Travel & Lifestyle", description: "Atmospheric captures from journeys." },
+  { slug: "candid-portraiture", title: "Candid Portraiture", description: "Authentic human moments." },
+  { slug: "street-environment", title: "Street / Environment", description: "Urban life and geometry." }
+];
+
+export const photos: Photo[] = [
+  { id: "1", categorySlug: "travel-lifestyle", url: "", caption: "Highlands", layoutClass: "md:col-span-5 md:col-start-1" },
+  { id: "2", categorySlug: "travel-lifestyle", url: "", caption: "Coastal", layoutClass: "md:col-span-4 md:col-start-8 md:mt-32" },
+  { id: "3", categorySlug: "candid-portraiture", url: "", caption: "Quiet", layoutClass: "md:col-span-5 md:col-start-2 md:mt-12" },
+  { id: "4", categorySlug: "street-environment", url: "", caption: "Urban", layoutClass: "md:col-span-6 md:col-start-5 md:-mt-12" }
+];
