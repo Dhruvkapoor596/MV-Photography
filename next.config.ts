@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Your existing settings
   devIndicators: {
     appIsrStatus: false,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  // The fix for image loading:
+  // Updated to the IP address from your terminal error
+  allowedDevOrigins: ['192.168.1.9'],
+  // Added to fix image loading issues on Vercel
   images: {
     unoptimized: true, 
   },

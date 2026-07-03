@@ -6,6 +6,14 @@ export interface Photo {
   caption: string;
 }
 
+export const heroImages = [
+  { id: "Hero", src: "/Hero/Hero.jpeg", alt: "Hero" },
+  { id: "Category-1", src: "/Hero/Events.jpeg", alt: "Events" },
+  { id: "Category-2", src: "/Hero/Trips.jpeg", alt: "Trips" },
+  { id: "Category-3", src: "/Hero/People.jpeg", alt: "People" },
+  { id: "Category-4", src: "/Hero/Urban.jpeg", alt: "Urban" }
+];
+
 export const photos: Photo[] = [
   { id: "1", src: "/Portfolio/Portfolio-1.jpeg", caption: "Caption 1" },
   { id: "2", src: "/Portfolio/Portfolio-2.jpeg", caption: "Caption 2" },

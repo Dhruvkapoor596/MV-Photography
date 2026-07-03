@@ -1,13 +1,13 @@
 // app/page.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { heroImages } from "../data/portfolioData"; 
 
-// You can add your data directly here or import it
 const works = [
-  { title: "Events", desc: "This section describes the narrative behind the highlands collection...", img: "/Hero/Events.jpg" },
-  { title: "Trips", desc: "This section describes the narrative behind the coastal collection...", img: "/Hero/Trips.jpeg" },
-  { title: "People", desc: "This section describes the narrative behind the quiet collection...", img: "/Hero/People.jpg" },
-  { title: "Urban", desc: "This section describes the narrative behind the urban collection...", img: "/Hero/Urban.jpg" },
+  { title: "Events", desc: "This section describes the narrative behind the highlands collection...", src: "/Hero/Events.jpeg" },
+  { title: "Trips", desc: "This section describes the narrative behind the coastal collection...", src: "/Hero/Trips.jpeg" },
+  { title: "People", desc: "This section describes the narrative behind the quiet collection...", src: "/Hero/People.jpeg" },
+  { title: "Urban", desc: "This section describes the narrative behind the urban collection...", src: "/Hero/Urban.jpeg" },
 ];
 
 export default function Home() {
@@ -26,8 +26,16 @@ export default function Home() {
           </Link>
         </div>
       
-        <div className="w-full max-w-md aspect-[3/4] bg-[#EAE8E1] flex items-center justify-center border border-[#2C2C2C]/5">
-          <span className="text-[#71717A] text-sm uppercase tracking-widest">[ Hero Image ]</span>
+        <div className="w-full max-w-md aspect-[3/4] bg-[#EAE8E1] flex items-center justify-center border border-[#2C2C2C]/5 overflow-hidden">
+          {/* Added priority prop to fix LCP warning */}
+          <Image 
+            src={heroImages[0].src} 
+            alt="Hero" 
+            width={600} 
+            height={800} 
+            priority={true} 
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
@@ -42,8 +50,14 @@ export default function Home() {
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className="w-full md:w-1/2 aspect-[4/3] bg-[#EAE8E1] flex items-center justify-center border border-transparent transition-all duration-500 hover:border-[#D35400]">
-                <span className="text-gray-500">[ {work.title} ]</span>
+              <div className="w-full md:w-1/2 aspect-[4/3] bg-[#EAE8E1] flex items-center justify-center border border-transparent transition-all duration-500 hover:border-[#D35400] overflow-hidden">
+                <Image 
+                  src={work.src} 
+                  alt={work.title} 
+                  width={800} 
+                  height={600} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="w-full md:w-1/2 space-y-4">
                 <h3 className="font-serif text-3xl">{work.title}</h3>
