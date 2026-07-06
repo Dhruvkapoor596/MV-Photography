@@ -35,7 +35,8 @@ export default function Navbar() {
         </Link>
         
         {/* Right: Desktop Nav */}
-        <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest text-[#71717A] justify-self-end">
+        <nav className="hidden md:flex gap-6 text-xs uppercase tracking-widest text-[#71717A] justify-self-end">
+          <Link href="/" className="hover:text-[#2C2C2C]">Home</Link>
           <Link href="/about" className="hover:text-[#2C2C2C]">About</Link>
           <Link href="/portfolio" className="hover:text-[#2C2C2C]">Portfolio</Link>
           <Link href="/projects" className="hover:text-[#2C2C2C]">Projects</Link>

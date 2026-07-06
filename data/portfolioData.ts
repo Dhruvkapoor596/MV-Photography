@@ -10,7 +10,7 @@ export const heroImages = [
   { id: "Hero", src: "/Hero/Hero.jpeg", alt: "Hero" },
   { id: "Category-1", src: "/Hero/Events.jpeg", alt: "Events" },
   { id: "Category-2", src: "/Hero/Trips.jpeg", alt: "Trips" },
-  { id: "Category-3", src: "/Hero/People.jpeg", alt: "People" },
+  { id: "Category-3", src: "/Hero/People.jpg", alt: "People" },
   { id: "Category-4", src: "/Hero/Urban.jpeg", alt: "Urban" }
 ];
 

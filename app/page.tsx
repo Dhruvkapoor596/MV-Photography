@@ -6,7 +6,7 @@ import { heroImages } from "../data/portfolioData";
 const works = [
   { title: "Events", desc: "This section describes the narrative behind the highlands collection...", src: "/Hero/Events.jpeg" },
   { title: "Trips", desc: "This section describes the narrative behind the coastal collection...", src: "/Hero/Trips.jpeg" },
-  { title: "People", desc: "This section describes the narrative behind the quiet collection...", src: "/Hero/People.jpeg" },
+  { title: "People", desc: "This section describes the narrative behind the quiet collection...", src: "/Hero/People.jpg" },
   { title: "Urban", desc: "This section describes the narrative behind the urban collection...", src: "/Hero/Urban.jpeg" },
 ];
 
@@ -22,7 +22,7 @@ export default function Home() {
             Capture moments <span className="italic">Create memories</span>
           </h2>
           <Link href="/portfolio" className="inline-block border-b border-[#2C2C2C] pb-1 uppercase tracking-widest text-xs hover:text-[#D35400] transition-colors">
-            Explore Work
+            Portfolio
           </Link>
         </div>
       
