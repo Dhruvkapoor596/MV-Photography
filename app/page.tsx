@@ -7,7 +7,7 @@ const works = [
   { title: "Events", desc: "This section describes the narrative behind the highlands collection...", src: "/Hero/Events.jpeg" },
   { title: "Trips", desc: "This section describes the narrative behind the coastal collection...", src: "/Hero/Trips.jpeg" },
   { title: "People", desc: "This section describes the narrative behind the quiet collection...", src: "/Hero/People.jpg" },
-  { title: "Urban", desc: "This section describes the narrative behind the urban collection...", src: "/Hero/Urban.jpeg" },
+  { title: "Urban", desc: "This section describes the narrative behind the urban collection...", src: "/Hero/Urban.png" },
 ];
 
 export default function Home() {
