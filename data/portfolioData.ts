@@ -6,6 +6,12 @@ export interface Photo {
   caption: string;
 }
 
+export const aboutImage = {
+  id: "mohit-portrait",
+  src: "/About/Mohit.jpeg", // Ensure your image is at public/About/Mohit.jpeg
+  alt: "Photograph of Mohit"
+};
+
 export const heroImages = [
   { id: "Hero", src: "/Hero/Hero.JPG", alt: "Hero" },
   { id: "Category-1", src: "/Hero/Events.jpeg", alt: "Events" },

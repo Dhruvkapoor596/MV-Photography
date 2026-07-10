@@ -4,10 +4,15 @@ import { projects } from "../../data/projectsData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen pt-12 px-8 md:px-16 lg:px-32 pb-24">
-      <h1 className="font-serif text-5xl mb-16">Projects</h1>
+    <div className="min-h-screen pt-16 px-8 md:px-16 lg:px-32 pb-12">
+      <div className="mb-10">
+      <h1 className="font-serif text-5xl md:text-6xl mb-4">Projects</h1>
+      <p className="text-[#71717A] text-sm uppercase tracking-widest">Services we offer</p>
+      </div>
+
+      <div className="pt-8 border-t border-[#EAE8E1]"></div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {projects.map((project) => (
           <Link 
             key={project.slug} 
@@ -22,7 +27,7 @@ export default function ProjectsPage() {
                 width={600} 
                 height={400}
                 // 'blur-sm' makes it blurred initially, 'group-hover:blur-none' clears it
-                className="w-full h-auto block transition-all duration-700 ease-in-out blur-sm group-hover:blur-none" 
+                className="w-full h-auto block transition-all duration-700 ease-in-out blur-xs group-hover:blur-none" 
               />
               
               {/* Overlay Text - Always visible, but feels part of the blurred image */}

@@ -39,8 +39,10 @@ export default function Home() {
         </div>
       </section>
 
+      <div className=" border-t border-[#EAE8E1]"></div>
+
       {/* Selected Works Section (Zig-Zag) */}
-      <section className="py-20">
+      <section className="py-5">
         <h2 className="font-serif text-5xl mb-16">Selected Works</h2>
         <div className="space-y-24">
           {works.map((work, index) => (
