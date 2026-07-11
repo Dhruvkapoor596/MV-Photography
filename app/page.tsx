@@ -4,10 +4,10 @@ import Image from "next/image";
 import { heroImages } from "../data/portfolioData"; 
 
 const works = [
-  { title: "Events", desc: "This section describes the narrative behind the highlands collection...", src: "/Hero/Events.jpeg" },
-  { title: "Trips", desc: "This section describes the narrative behind the coastal collection...", src: "/Hero/Trips.jpeg" },
-  { title: "People", desc: "This section describes the narrative behind the quiet collection...", src: "/Hero/People.jpg" },
-  { title: "Urban", desc: "This section describes the narrative behind the urban collection...", src: "/Hero/Urban.png" },
+  { title: "Events", desc: "Capturing the energy and emotion that define a gathering.", src: "/Hero/Events.jpeg" },
+  { title: "Trips", desc: "A visual journal of journeys taken and landscapes discovered.", src: "/Hero/Trips.jpeg" },
+  { title: "People", desc: "Capturing the quiet intimacy found in everyday human connection.", src: "/Hero/People.jpg" },
+  { title: "Urban", desc: "The silent pulse of urban landscapes, caught in still frames.", src: "/Hero/Urban.png" },
 ];
 
 export default function Home() {
