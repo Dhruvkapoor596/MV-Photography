@@ -30,7 +30,7 @@ export const photos: Photo[] = [
   { id: "7", src: "/Portfolio/Portfolio-7.jpeg", caption: "Caption 7" },
   { id: "8", src: "/Portfolio/Portfolio-8.jpeg", caption: "Caption 8" },
   { id: "9", src: "/Portfolio/Portfolio-9.jpg", caption: "Caption 9" },
-  { id: "10", src: "/Portfolio/Portfolio-10.png", caption: "Caption 10" },
+  { id: "10", src: "/Portfolio/Portfolio-10.jpeg", caption: "Caption 10" },
   { id: "11", src: "/Portfolio/Portfolio-11.jpg", caption: "Caption 11" },
   { id: "12", src: "/Portfolio/Portfolio-12.jpg", caption: "Caption 12" },
   { id: "13", src: "/Portfolio/Portfolio-13.jpg", caption: "Caption 13" },
@@ -92,7 +92,7 @@ export const photos: Photo[] = [
   { id: "69", src: "/Portfolio/Portfolio-69.jpeg", caption: "Caption 69" },
   { id: "70", src: "/Portfolio/Portfolio-70.jpg", caption: "Caption 70" },
   { id: "71", src: "/Portfolio/Portfolio-71.jpeg", caption: "Caption 71" },
-  { id: "72", src: "/Portfolio/Portfolio-72.jpeg", caption: "Caption 72" },
+  { id: "72", src: "/Portfolio/Portfolio-72.png", caption: "Caption 72" },
   { id: "73", src: "/Portfolio/Portfolio-73.jpg", caption: "Caption 73" },
   { id: "74", src: "/Portfolio/Portfolio-74.jpg", caption: "Caption 74" },
   { id: "75", src: "/Portfolio/Portfolio-75.jpg", caption: "Caption 75" },
@@ -102,5 +102,7 @@ export const photos: Photo[] = [
   { id: "79", src: "/Portfolio/Portfolio-79.png", caption: "Caption 79" },
   { id: "80", src: "/Portfolio/Portfolio-80.jpeg", caption: "Caption 80" },
   { id: "81", src: "/Portfolio/Portfolio-81.jpg", caption: "Caption 81" },
-  { id: "82", src: "/Portfolio/Portfolio-82.jpeg", caption: "Caption 82" }
+  { id: "82", src: "/Portfolio/Portfolio-82.jpeg", caption: "Caption 82" },
+  { id: "83", src: "/Portfolio/Portfolio-83.jpeg", caption: "Caption 83" },
+  { id: "84", src: "/Portfolio/Portfolio-84.jpg", caption: "Caption 84" }
 ];
