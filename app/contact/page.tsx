@@ -1,7 +1,32 @@
-// app/contact/page.tsx
+"use client";
+
+import { useFormStatus } from "react-dom";
+import { sendEmail } from "../actions/sendEmail";
 import Image from "next/image";
 
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <button 
+      type="submit" 
+      disabled={pending}
+      className="pt-4 block text-xs uppercase tracking-widest text-[#2C2C2C] hover:text-[#D35400] transition-colors disabled:opacity-50"
+    >
+      {pending ? "Sending..." : "Send message ➔"}
+    </button>
+  );
+}
+
 export default function Contact() {
+  async function action(formData: FormData) {
+    const result = await sendEmail(formData);
+    if (result.success) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Failed to send message.");
+    }
+  }
+
   return (
     <div className="min-h-screen pt-16 px-8 md:px-16 lg:px-32 pb-24">
       <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start">
@@ -24,22 +49,20 @@ export default function Contact() {
 
         {/* Right Side: Contact Form & WhatsApp */}
         <div className="flex-1 w-full max-w-lg space-y-12">
-          <form className="space-y-6">
+          <form action={action} className="space-y-6">
             <div>
               <label className="block text-[10px] uppercase tracking-widest text-[#71717A] mb-2">Name</label>
-              <input type="text" className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors" />
+              <input name="name" required type="text" className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors" />
             </div>
             <div>
               <label className="block text-[10px] uppercase tracking-widest text-[#71717A] mb-2">Email</label>
-              <input type="email" className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors" />
+              <input name="email" required type="email" className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors" />
             </div>
             <div>
               <label className="block text-[10px] uppercase tracking-widest text-[#71717A] mb-2">Message</label>
-              <textarea rows={4} className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors"></textarea>
+              <textarea name="message" required rows={4} className="w-full border-b border-[#EAE8E1] bg-transparent py-2 focus:border-[#2C2C2C] outline-none transition-colors"></textarea>
             </div>
-            <button type="submit" className="pt-4 block text-xs uppercase tracking-widest text-[#2C2C2C] hover:text-[#D35400] transition-colors">
-              Send message ➔
-            </button>
+            <SubmitButton />
           </form>
 
           {/* WhatsApp Section */}

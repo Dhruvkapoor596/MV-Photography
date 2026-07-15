@@ -104,5 +104,6 @@ export const photos: Photo[] = [
   { id: "81", src: "/Portfolio/Portfolio-81.jpg", caption: "Caption 81" },
   { id: "82", src: "/Portfolio/Portfolio-82.jpeg", caption: "Caption 82" },
   { id: "83", src: "/Portfolio/Portfolio-83.jpeg", caption: "Caption 83" },
-  { id: "84", src: "/Portfolio/Portfolio-84.jpeg", caption: "Caption 84" }
+  { id: "84", src: "/Portfolio/Portfolio-84.jpeg", caption: "Caption 84" },
+  { id: "85", src: "/Portfolio/Portfolio-85.jpeg", caption: "Caption 85" }
 ];
