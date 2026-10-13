@@ -17,7 +17,7 @@ export default function Navbar() {
         
         {/* Left: Brand Text */}
         <Link href="/" onClick={closeMenu} className="justify-self-start">
-          <h1 className="font-serif text-3xl md:text-4xl font-medium tracking-wide text-[#2C2C2C]">
+          <h1 className="font-serif text-xl md:text-4xl font-medium tracking-wide text-[#2C2C2C]">
             Captured By Mohit
           </h1>
         </Link>

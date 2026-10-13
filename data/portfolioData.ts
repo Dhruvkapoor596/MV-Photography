@@ -105,5 +105,20 @@ export const photos: Photo[] = [
   { id: "82", src: "/Portfolio/Portfolio-82.jpeg", caption: "Caption 82" },
   { id: "83", src: "/Portfolio/Portfolio-83.jpeg", caption: "Caption 83" },
   { id: "84", src: "/Portfolio/Portfolio-84.jpeg", caption: "Caption 84" },
-  { id: "85", src: "/Portfolio/Portfolio-85.jpeg", caption: "Caption 85" }
+  { id: "85", src: "/Portfolio/Portfolio-85.jpeg", caption: "Caption 85" },
+  { id: "86", src: "/Portfolio/Portfolio-86.jpeg", caption: "Caption 86" },
+  { id: "87", src: "/Portfolio/Portfolio-87.jpeg", caption: "Caption 87" },
+  { id: "88", src: "/Portfolio/Portfolio-88.jpeg", caption: "Caption 88" },
+  { id: "89", src: "/Portfolio/Portfolio-89.jpeg", caption: "Caption 89" },
+  { id: "90", src: "/Portfolio/Portfolio-90.jpeg", caption: "Caption 90" },
+  { id: "91", src: "/Portfolio/Portfolio-91.jpeg", caption: "Caption 91" },
+  { id: "92", src: "/Portfolio/Portfolio-92.jpeg", caption: "Caption 92" },
+  { id: "93", src: "/Portfolio/Portfolio-93.jpeg", caption: "Caption 93" },
+  { id: "94", src: "/Portfolio/Portfolio-94.jpeg", caption: "Caption 94" },
+  { id: "95", src: "/Portfolio/Portfolio-95.jpeg", caption: "Caption 95" },
+  { id: "96", src: "/Portfolio/Portfolio-96.jpeg", caption: "Caption 96" },
+  { id: "97", src: "/Portfolio/Portfolio-97.jpeg", caption: "Caption 97" },
+  { id: "98", src: "/Portfolio/Portfolio-98.jpeg", caption: "Caption 98" },
+  { id: "99", src: "/Portfolio/Portfolio-99.jpeg", caption: "Caption 99" },
+  { id: "100", src: "/Portfolio/Portfolio-100.jpeg", caption: "Caption 100" }
 ];
