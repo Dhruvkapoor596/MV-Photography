@@ -61,9 +61,9 @@ export default function Navbar() {
 
       {/* Raised Separator Line */}
       <div className="flex items-center w-full">
-        <div className="flex-1 h-[1px] bg-[#EAE8E1]"></div>
+        <div className="flex-1 h-1px bg-[#EAE8E1]"></div>
         <div className="w-24 md:w-32"></div> 
-        <div className="flex-1 h-[1px] bg-[#EAE8E1]"></div>
+        <div className="flex-1 h-1px bg-[#EAE8E1]"></div>
       </div>
     </header>
   );

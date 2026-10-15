@@ -120,5 +120,14 @@ export const photos: Photo[] = [
   { id: "97", src: "/Portfolio/Portfolio-97.jpeg", caption: "Caption 97" },
   { id: "98", src: "/Portfolio/Portfolio-98.jpeg", caption: "Caption 98" },
   { id: "99", src: "/Portfolio/Portfolio-99.jpeg", caption: "Caption 99" },
-  { id: "100", src: "/Portfolio/Portfolio-100.jpeg", caption: "Caption 100" }
+  { id: "100", src: "/Portfolio/Portfolio-100.jpeg", caption: "Caption 100" },
+  { id: "101", src: "/Portfolio/Portfolio-101.jpeg", caption: "Caption 101" },
+  { id: "102", src: "/Portfolio/Portfolio-102.jpeg", caption: "Caption 102" },
+  { id: "103", src: "/Portfolio/Portfolio-103.jpeg", caption: "Caption 103" },
+  { id: "104", src: "/Portfolio/Portfolio-104.jpeg", caption: "Caption 104" },
+  { id: "105", src: "/Portfolio/Portfolio-105.jpeg", caption: "Caption 105" },
+  { id: "106", src: "/Portfolio/Portfolio-106.jpeg", caption: "Caption 106" },
+  { id: "107", src: "/Portfolio/Portfolio-107.jpeg", caption: "Caption 107" },
+  { id: "108", src: "/Portfolio/Portfolio-108.jpeg", caption: "Caption 108" },
+  { id: "109", src: "/Portfolio/Portfolio-109.jpeg", caption: "Caption 109" },
 ];
